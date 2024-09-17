@@ -1,0 +1,220 @@
+/* Reset dasar untuk memastikan konsistensi tampilan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk body */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Gaya untuk header */
+app-header {
+  display: block;
+  background-color: #a1d6b2;
+  color: #f1f3c2;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Gaya untuk main konten */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Gaya untuk form catatan */
+note-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  display: grid;
+  gap: 1rem; /* Menambahkan jarak antar elemen form */
+}
+
+.note-form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.note-form-group label {
+  font-weight: bold;
+}
+
+.note-form-group input[type="text"],
+.note-form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.note-form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+#btnSubmit {
+  background-color: #a1d6b2; /* Warna tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+#btnSubmit:hover {
+  background-color: #e8b86d; /* Warna tombol saat hover */
+}
+
+/* Gaya untuk daftar catatan */
+#notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+/* Gaya untuk item catatan */
+note-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.note-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+.archive-btn {
+  background-color: #e8b86d; /* Warna tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.archive-btn:hover {
+  background-color: #a1d6b2; /* Warna tombol saat hover */
+}
+.delete-btn {
+  background-color: #e8b86d; /* Warna tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #a1d6b2; /* Warna tombol saat hover */
+}
+.unarchive-btn {
+  background-color: #e8b86d; /* Warna tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+#btnDelete {
+  width: 32%;
+}
+
+.unarchive-btn:hover {
+  background-color: #a1d6b2; /* Warna tombol saat hover */
+}
+.btnShow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 100%;
+}
+#archived-notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  width: 100%;
+  margin-top: 20px;
+}
+#show-archived {
+  background-color: #a1d6b2; /* Warna tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+#show-archived:hover {
+  background-color: #a1d6b2; /* Warna tombol saat hover */
+}
+/* loading indicator */
+#loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+#loading-indicator.hidden {
+  display: none;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #notes-list {
+    grid-template-columns: 1fr;
+  }
+  .btnShow {
+    display: flex;
+    flex-direction: column;
+  }
+  .unarchive-btn {
+    width: 100%;
+  }
+  #btnDelete {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  note-form {
+    padding: 1rem;
+  }
+
+  note-item {
+    padding: 1rem;
+    width: 100%;
+  }
+}
