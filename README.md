@@ -1,6 +1,4 @@
-Sepertinya bagian `Install Dependencies`, `Menjalankan Aplikasi Secara Lokal`, dan `Build untuk Produksi` belum ada dalam `README.md` yang Anda buat. Mari kita lengkapi file `README.md` Anda dengan informasi yang lengkap. Berikut adalah versi yang diperbarui:
 
-```markdown
 # App Note
 
 App Note adalah aplikasi catatan sederhana berbasis web yang memungkinkan pengguna untuk membuat, mengedit, dan menghapus catatan. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang efisien dan responsif.
@@ -39,7 +37,7 @@ File build akan tersedia di folder `dist`.
 
 ## Struktur Proyek
 Berikut adalah struktur folder utama dari proyek ini:
-```plaintext
+plaintext
 app-note/
 ├── src/
 │   ├── components/
@@ -59,7 +57,7 @@ app-note/
 ├── webpack.common.js
 ├── webpack.dev.js
 └── webpack.prod.js
-```
+
 
 ## Teknologi yang Digunakan
 - **JavaScript ES6**: Digunakan untuk fungsionalitas logika aplikasi.
