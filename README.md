@@ -71,3 +71,7 @@ app-note/
 Jika Anda ingin berkontribusi dalam pengembangan proyek ini, silakan buat pull request atau buka issue baru.
 
 ---
+## Screenshoot
+![image](https://github.com/user-attachments/assets/c24e3268-5e32-4071-acbe-bf2fa543196d)
+
+![image](https://github.com/user-attachments/assets/6c2b1f49-bab4-4e7a-81f1-c0171d2c9fc3)
