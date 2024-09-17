@@ -24,14 +24,14 @@ npm install
 ### 3. Menjalankan Aplikasi Secara Lokal
 Untuk menjalankan aplikasi dalam mode pengembangan:
 ```bash
-npm build
+npm run dev
 ```
 Aplikasi akan berjalan di [http://localhost:8080](http://localhost:8080) secara default.
 
 ### 4. Build untuk Produksi
 Jika Anda ingin membuild proyek untuk environment produksi, jalankan:
 ```bash
-npm run dev
+npm run build 
 ```
 File build akan tersedia di folder `dist`.
 
